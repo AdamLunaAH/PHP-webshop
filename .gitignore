@@ -1,3 +1,125 @@
+# gitignore
+
+# folders
+wpmywebsite-old/
+wpmywebsiteog/
+
+
+# Composer dependencies
+/vendor/
+composer.lock
+
+# Environment variables
+.env
+
+# Node modules (if you use Node.js or front-end tooling)
+/node_modules/
+npm-debug.log
+yarn-error.log
+
+# Debug and log files
+*.log
+
+# PHPStorm
+.idea/
+
+# Eclipse
+.project
+.buildpath
+.settings/
+
+# VSCode
+.vscode/
+.code-workspace
+
+# NetBeans
+nbproject/private/
+
+# Sublime Text
+*.sublime-workspace
+
+# MacOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# Backup files
+*.bak
+*.backup
+
+# Temporary files
+*.tmp
+*.temp
+
+# Cache
+cache/
+tmp/
+
+# Specific IDE configurations (if applicable)
+*.swp
+*.swo
+*.bak
+*.orig
+
+# PHPUnit
+.phpunit.result.cache
+
+# Laravel (if you use it)
+bootstrap/cache/
+storage/*.key
+.env.testing
+
+# WordPress specific
+wp-config.php
+wp-content/uploads/
+wp-content/upgrade/
+wp-content/backup-db/
+wp-content/advanced-cache.php
+wp-content/wp-cache-config.php
+wp-content/cache/
+wp-content/backups/
+sitemap.xml
+sitemap.xml.gz
+*.sql
+
+# Ignore the project root index.php (WordPress installation)
+index.php
+
+# XAMPP specific
+/xamppfiles/
+/htdocs/xampp/
+/htdocs/webalizer/
+/htdocs/phpmyadmin/
+/htdocs/tmp/
+/htdocs/logs/
+/htdocs/cgi-bin/
+/htdocs/security/
+/xampp/
+/xampp-control.ini
+/xampp-control.log
+/xampp-portcheck.exe
+/portable.txt
+/mysql/data
+/apache/logs
+/php/logs
+/ftpusers.txt
+/proftpdpasswd
+
+# General XAMPP htdocs files
+/xamppfiles/
+/htdocs/error/
+/htdocs/manual/
+/htdocs/icons/
+/htdocs/licenses/
+/htdocs/bitnami/
+/htdocs/test.php
+
 # Wordpress - ignore core, configuration, examples, uploads and logs.
 # https://github.com/github/gitignore/blob/main/WordPress.gitignore
 
@@ -6,16 +128,19 @@
 # Note: if you want to stage/commit WP core files
 # you can delete this whole section/until Configuration.
 /wp-admin/
+wp-admin/
 /wp-content/index.php
 /wp-content/languages
 /wp-content/plugins/index.php
 /wp-content/themes/index.php
 /wp-includes/
+wp-includes/
 /index.php
 /license.txt
 /readme.html
 /wp-*.php
 /xmlrpc.php
+
 
 # Configuration
 wp-config.php
@@ -34,6 +159,7 @@ wp-config.php
 
 # htaccess
 /.htaccess
+.htaccess
 
 # All plugins
 #
